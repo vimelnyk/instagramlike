@@ -8,4 +8,7 @@ fetch("http://localhost:3004/posts")
     for (let j = 0; j < obj.length; j++) {
       console.log(obj[j].image);
     }
+  })
+  .catch(function(error) {
+    console.error("Error:", error);
   });
